@@ -7,3 +7,11 @@ conda activate ai-chatbot
 conda deactivate
 
 pip install -r requirements.txt
+
+python app.py                               # Load vector indexes
+uvicorn main:app --reload                   # Run the app
+http://127.0.0.1:8000/                      # Open the URL in a web browser  - "message": "Developer Documentation Chatbot is Running Successfully!"
+http://127.0.0.1:8000/docs/                 # Verify the endpoints in the URL  & click "query" button and write a question "How to install dependencies?"
+
+n8n.io                                      # Register and open the URL for workflow setup
+ngrok.com                                   # To expose the locahost URL to internet for testing purpose
