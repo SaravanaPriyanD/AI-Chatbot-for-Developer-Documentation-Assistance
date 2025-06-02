@@ -1,0 +1,9 @@
+python --version
+
+conda create -n ai-chatbot python=3.10 -y
+
+conda activate ai-chatbot
+
+conda deactivate
+
+pip install -r requirements.txt
